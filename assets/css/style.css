@@ -430,6 +430,17 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+.resume .resume-item small{
+  font-size: 14px;
+  font-style: italic;
+  /* background: #e4edf9; */
+  padding: 5px 4px;
+  display: inline-block;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
 .resume .resume-item ul {
   padding-left: 20px;
 }
