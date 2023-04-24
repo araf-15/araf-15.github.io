@@ -134,12 +134,30 @@
     typed_strings = typed_strings.split(',')
     new Typed('.typed', {
       strings: typed_strings,
+      loop: false,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 4000,
+      onComplete: (self) => {
+        setTimeout(() => {
+          self.cursor.remove()
+        }, 2000)
+      }
+    });
+  }
+  const companyTyped = select('#companyProfile')
+  if (companyTyped) {
+    new Typed('#companyProfile', {
+      startDelay: 4000,
+      strings: ['At OnnoRokom Software Ltd.'],
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000
+      backDelay: 10000
     });
   }
+
+
 
   /**
    * Skills animation
